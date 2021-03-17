@@ -5,8 +5,8 @@
 library(raster)
 
 setwd("~/lab/") # Linux
-setwd("C:/lab/") # Windows
-setwd("/Users/name/Desktop/lab/") # Mac 
+# setwd("C:/lab/") # Windows
+# setwd("/Users/name/Desktop/lab/") # Mac 
 
 p224r63_2011 <- brick("p224r63_2011_masked.grd")
 p224r63_2011
