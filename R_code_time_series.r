@@ -23,8 +23,6 @@ plot(lst_2010)
 plot(lst_2015)
 
 # list f files:
-list.files()
-
 rlist <- list.files(pattern="lst")
 rlist
 
