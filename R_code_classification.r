@@ -16,7 +16,7 @@ soc <- unsuperClass(so, nClasses=3)
 plot(soc$map)
 
 soc20 <- unsuperClass(so, nClasses=20)
-plot(soe20$map,col=cl)
+plot(soc20$map,col=cl)
 
 cl <- colorRampPalette(c('yellow','black','red'))(100)
 plot(soc20$map,col=cl)
