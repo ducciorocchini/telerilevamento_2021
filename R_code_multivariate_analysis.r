@@ -32,7 +32,8 @@ summary(p224r63_2011res_pca$model)
 # dev.off()
 plotRGB(p224r63_2011res_pca$map, r=1, g=2, b=3, stretch="lin")
 
-
+# add from students:
+str(p224r63_2011res_pca)
 
 
 
