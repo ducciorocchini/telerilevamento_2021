@@ -35,11 +35,21 @@ ndvimean3 <- focal(ndvi, w=matrix(1/9, nrow=3, ncol=3), fun=mean)
 clsd <- colorRampPalette(c('blue','green','pink','magenta','orange','brown','red','yellow'))(100) # 
 plot(ndvimean3, col=clsd)
 
-
+# changing window size
 ndvisd13 <- focal(ndvi, w=matrix(1/169, nrow=13, ncol=13), fun=sd)
 clsd <- colorRampPalette(c('blue','green','pink','magenta','orange','brown','red','yellow'))(100) # 
 plot(ndvisd13, col=clsd)
 
+ndvisd5 <- focal(ndvi, w=matrix(1/25, nrow=5, ncol=5), fun=sd)
+clsd <- colorRampPalette(c('blue','green','pink','magenta','orange','brown','red','yellow'))(100) # 
+plot(ndvisd5, col=clsd)
+
+# PCA
+sentpca <- rasterPCA(sent) 
+plot(sentpca$map)  
+
+summary(sentpca$model)
+# the first PC contains 67.36804% of the original information
 
 
 
